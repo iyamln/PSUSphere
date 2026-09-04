@@ -201,7 +201,7 @@
                   <li>
                     <div class="user-box">
                       <div class="u-img">
-                        <img src="{% static 'img/profile.jpg' %}" alt="user" />
+                        <img src="{% static 'img/profile.jpg' %}" alt="user">
                       </div>
 
                       <div class="u-text">
@@ -256,7 +256,7 @@
           <!-- USER -->
           <div class="user">
             <div class="photo">
-              <img src="{% static 'img/profile.jpg' %}" />
+              <img src="{% static 'img/profile.jpg' %}">
             </div>
 
             <div class="info">
@@ -313,47 +313,50 @@
 
                 <p>Dashboard</p>
 
-                <span class="badge badge-count"> 5 </span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="#">
+              <a href="{% url 'organization-list' %}">
                 <i class="la la-table"></i>
 
-                <p>Components</p>
+                <p>Organization</p>
 
-                <span class="badge badge-count"> 14 </span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="#">
+              <a href="{% url 'orgmember-list' %}">
                 <i class="la la-keyboard-o"></i>
 
-                <p>Forms</p>
+                <p>Org. Members</p>
 
-                <span class="badge badge-count"> 50 </span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="#">
+              <a href="{% url 'student-list' %}">
                 <i class="la la-th"></i>
 
-                <p>Tables</p>
+                <p>Student</p>
 
-                <span class="badge badge-count"> 6 </span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="#">
+              <a href="{% url 'college-list' %}">
                 <i class="la la-bell"></i>
 
-                <p>Notifications</p>
+                <p>College</p>
 
-                <span class="badge badge-success"> 3 </span>
+              </a>
+
+            <li class="nav-item">
+              <a href="{% url 'program-list' %}">
+                <i class="la la-book"></i>
+
+                <p>Program</p>
+                
               </a>
             </li>
 
@@ -367,21 +370,6 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="#">
-                <i class="la la-fonticons"></i>
-
-                <p>Icons</p>
-              </a>
-            </li>
-
-            <li class="nav-item update-pro">
-              <button data-toggle="modal" data-target="#modalUpdate">
-                <i class="la la-hand-pointer-o"></i>
-
-                <p>Update To Pro</p>
-              </button>
-            </li>
           </ul>
         </div>
       </div>
