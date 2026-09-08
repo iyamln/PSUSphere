@@ -1,4 +1,4 @@
- {% load static %}
+{% load static %}
 
 <!doctype html>
 <html lang="en">
@@ -201,7 +201,7 @@
                   <li>
                     <div class="user-box">
                       <div class="u-img">
-                        <img src="{% static 'img/profile.jpg' %}" alt="user">
+                        <img src="{% static 'img/profile.jpg' %}" alt="user" />
                       </div>
 
                       <div class="u-text">
@@ -232,14 +232,14 @@
 
                   <div class="dropdown-divider"></div>
 
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="{% url 'account_email' %}">
                     <i class="ti-settings"></i>
                     Account Setting
                   </a>
 
                   <div class="dropdown-divider"></div>
 
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="{% url 'account_logout' %}">
                     <i class="fa fa-power-off"></i>
                     Logout
                   </a>
@@ -256,7 +256,7 @@
           <!-- USER -->
           <div class="user">
             <div class="photo">
-              <img src="{% static 'img/profile.jpg' %}">
+              <img src="{% static 'img/profile.jpg' %}" />
             </div>
 
             <div class="info">
@@ -307,21 +307,17 @@
 
           <!-- SIDEBAR MENU -->
           <ul class="nav">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="/">
                 <i class="la la-dashboard"></i>
-
                 <p>Dashboard</p>
-
               </a>
             </li>
 
             <li class="nav-item">
               <a href="{% url 'organization-list' %}">
                 <i class="la la-table"></i>
-
                 <p>Organization</p>
-
               </a>
             </li>
 
@@ -329,47 +325,30 @@
               <a href="{% url 'orgmember-list' %}">
                 <i class="la la-keyboard-o"></i>
 
-                <p>Org. Members</p>
-
+                <p>Org Members</p>
               </a>
             </li>
 
             <li class="nav-item">
               <a href="{% url 'student-list' %}">
                 <i class="la la-th"></i>
-
-                <p>Student</p>
-
+                <p>Students</p>
               </a>
             </li>
 
             <li class="nav-item">
               <a href="{% url 'college-list' %}">
                 <i class="la la-bell"></i>
-
                 <p>College</p>
-
               </a>
+            </li>
 
             <li class="nav-item">
               <a href="{% url 'program-list' %}">
-                <i class="la la-book"></i>
-
-                <p>Program</p>
-                
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#">
                 <i class="la la-font"></i>
-
-                <p>Typography</p>
-
-                <span class="badge badge-danger"> 25 </span>
+                <p>Program</p>
               </a>
             </li>
-
           </ul>
         </div>
       </div>
