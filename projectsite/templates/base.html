@@ -1,8 +1,10 @@
 {% load static %}
+{% load pwa %}
 
 <!doctype html>
 <html lang="en">
   <head>
+    {% progressive_web_app_meta %}
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>{% block title %}PSUSphere{% endblock %}</title>
 
